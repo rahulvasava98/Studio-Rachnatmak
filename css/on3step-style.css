@@ -1113,9 +1113,10 @@ ul#crumbs li:last-child:after {
   position: relative;
   width: 100%;
   letter-spacing: 1px;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-bottom: 20px;
   z-index: 0;
+  transition: 2s;
 }
 .gal-home:hover img {
   width: 100%;
@@ -3800,6 +3801,64 @@ body.trans-header .menu-line2.white, body.trans-header .menu-line1.white, body.t
 /***** transparent header end *****/
 
 /* scroll onStep */
+
+.gal-home-content{
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.gal-home-over{
+    position: relative;
+    overflow: hidden;
+}
+
+.teaminfor{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    top:-100%;
+    left: 0;
+    transition: all ease 2s;
+    padding: 1rem 2rem;
+}
+
+.gal-home:hover .teaminfor{
+    top:0;
+    height: 100%;
+}
+
 .onStep {
     opacity: 0;
 }
+.team-sub{
+    position: relative;
+    left: 0;
+    padding: 1rem 0;
+  }
+  
+  /* .team-info{
+    position: absolute; 
+    left: 0;
+    bottom:0;
+    padding: 1rem 0;
+  } */
+
+  .team-info {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    padding: 1rem 0;
+    height: 0px;
+    opacity: 0;
+  }
+
+  .gal-home:hover .team-info{
+    bottom: 0;
+    transition: 2s;
+    opacity: 1;
+  }
+
+  
+
+  
