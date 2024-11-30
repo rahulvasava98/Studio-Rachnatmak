@@ -3807,7 +3807,7 @@ body.trans-header .menu-line2.white, body.trans-header .menu-line1.white, body.t
     cursor: pointer;
 }
 
-.gal-home{
+.gal-home-over{
     position: relative;
     overflow: hidden;
 }
@@ -3819,7 +3819,8 @@ body.trans-header .menu-line2.white, body.trans-header .menu-line1.white, body.t
     background-color: white;
     top:-100%;
     left: 0;
-    transition: all ease 4s;
+    transition: all ease 2s;
+    padding: 1rem 2rem;
 }
 
 .gal-home:hover .teaminfor{
